@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./unicef.css">
+    <title>unicef</title>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <a href="#" class="logo">
+        <p></p>
+    </a>
+
+    <!-- 버튼 -->
+    <div class="btn-text-ring btn-sticky">
+        <div class="text-content">
+            <span>유니세프 팀 합류하고<br>반지 받기</span>
+            <a class="btn-next-sticky"></a>
+        </div>
+    </div>
+
+
+    <!-- 메인 1 : 로고 -->
+    <section class="main">
+        <div class="image-teamRingMain">
+            <img src="./img/visual_tit@1.5x.png" alt="I AM UNICEF TEAM">
+        </div>
+        <div class="left-box">
+            <div class="carousel-box">
+                <img src="img/people05.jpg" alt="홍보모델사진_이전" class="img_people_prev">
+                <img src="img/people06.jpg" alt="홍보모델사진_현재" class="img_people_next" id="img_people_next">
+            </div>
+            <div class="thumb-items">
+                <div class="carousel-thumb-left">
+                    <ul>
+                        <li><img src="img/people17.jpg" alt="홍보모델사진_이전_4"></li>
+                        <li><img src="img/people01.jpg" alt="홍보모델사진_이전_3"></li>
+                        <li><img src="img/people02.jpg" alt="홍보모델사진_이전_2"></li>
+                        <li><img src="img/people03.jpg" alt="홍보모델사진_이전_1"></li>
+                        <li><img src="img/people04.jpg" alt="홍보모델사진_이전"></li>
+                    </ul>
+                </div>
+                <div class="bar-thumb-group">
+                    <span class="btn-prev-thumb"></span>
+                    <span class="btn-next-thumb"></span>
+                    <ul class="bar">
+                    </ul>
+                </div>
+                <div class="carousel-thumb-right">
+                    <ul>
+                        <li><img src="img/people06.jpg" alt="홍보모델사진_다음"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 2 : 유튜브 비디오 -->
+    <section class="video">
+        <div class="video-box">
+            <div class="video-wrapper">
+                <iframe id="unicefVideo"
+                    src="https://www.youtube.com/embed/LcdqMBD4kMk?enablejsapi=1&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=LcdqMBD4kMk&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <button class="btn-mute"></button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 3 : 팀 반지 -->
+    <section class="teamRing bg-teamRing">
+        <div class="title-box">
+            <h3 class="title-teamRing">
+                소외된 어린이와 함께 하는 유니세프 팀에 합류한다는 증표
+                <strong>유니세프 팀 반지</strong>
+            </h3>
+            <div class="content-ring">
+                <img class="img-ring" src="./img/team_ring@2x.png" alt="반지이미지">
+                <div class="text-ring">
+                    <span>유니세프 팀이 된 당신을 위한 선물,<br>어린이를 지켜주신 분들꼐<br>유니세프 팀 반지를 드립니다.</span>
+                    <div class="btn-text-ring">
+                        <span>유니세프 팀 합류하고<br>반지 받기</span>
+                        <a href="#"><img src="/img/next_long.svg" alt="받지받기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="info-ring">
+                <ul class="image-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="size-box">
+                    <p class="eng">size info</p>
+                    <p>유니세프 팀 반지는 S, M, L 사이즈로 제작되었습니다.</p>
+                    <table>
+                        <tr>
+                            <th scope="col">사이즈</th>
+                            <th scope="col">호수</th>
+                            <th scope="col">손가락 둘레</th>
+                            <th scope="col">내경</th>
+                            <th scope="col">외경</th>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>8~10호</td>
+                            <td>52mm</td>
+                            <td>16.1mm</td>
+                            <td>20.0mm</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>14~16호</td>
+                            <td>58mm</td>
+                            <td>18.0mm</td>
+                            <td>21.9mm</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>20~22호</td>
+                            <td>64mm</td>
+                            <td>20.8mm</td>
+                            <td>24.5mm</td>
+                        </tr>
+                    </table>
+                </div>
+                <span>*반지 둘레 사이즈는 2019년 10월 1일부터 적용된 한국표준 규격(KS규격) 입니다.</span>
+            </div>
+        </div>
+
+        <!-- 정기 후원 참여-->
+        <div class="teamJoin">
+            <img src="/img/ring_pakge@2x.png" alt="팀반지패키지">
+            <div class="text-teamJoin">
+                <h3>기존 정기후원자 참여방법</h3>
+                <p>이미 정기후원으로 함께하고 계신다면 어린이에게<br>유니세프 팀 패키지를 선물하여 반지를 받으실 수 있습니다.</p>
+                <div class="desc">
+                    <p>* 패키지 구성:유니세프 책가방1개, 양털담요 1장, 영양실조 치료식 30봉</p>
+                    <p class="red">* 유니세프 정기후원자가 아닌 경우<br>&nbsp;&nbsp;&nbsp;해당 일시후원을 신청하셔도 유니세프 팀 반지가 전달되지 않습니다.</p>
+                </div>
+            </div>
+            <a href="#">패키지 선물하고 받지받기&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+    </section>
+
+    <!-- 메인 4 : 반지모델이미지 -->
+    <section class="lingModelImage bg-teamRing">
+        <div class="slide-ling">
+            <div>
+                <img src="img/slide_center01.jpg" alt="슬라이드반지이미지01">
+            </div>
+            <div>
+                <img src="img/slide_center02.jpg" alt="슬라이드반지이미지02">
+            </div>
+            <div>
+                <img src="img/slide_center03.jpg" alt="슬라이드반지이미지03">
+            </div>
+            <div>
+                <img src="img/slide_center04.jpg" alt="슬라이드반지이미지04">
+            </div>
+            <div>
+                <img src="img/slide_center05.jpg" alt="슬라이드반지이미지05">
+            </div>
+            <div>
+                <img src="img/slide_center06.jpg" alt="슬라이드반지이미지06">
+            </div>
+            <div>
+                <img src="img/slide_center07.jpg" alt="슬라이드반지이미지07">
+            </div>
+        </div>
+        <div class="slide-btn">
+            <button type="button" class="slide-prev"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="dots-container"></div>
+            <button type="button" class="slide-next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+
+    <!-- 메인 5 : 반지 리뷰 -->
+    <section class="review">
+        <div class="review-box">
+            <div class="title-review">
+                <p>Review</p>
+                <span>우리 주변에서 빛나는 유니세프 팀 반지</span>
+            </div>
+            <div class="content-review">
+                <div class="img-review">
+                    <div class="slide-review">
+                    </div>
+                </div>
+                <div class="list-review">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰 모달 -->
+    <div id="dialog" style="display: none;">
+        <div class="dialog-review-box">
+        </div>
+        <div class="dialog-review-slider">
+        </div>
+    </div>
+
+
+    <!-- 메인 6 : 유니세프 팀 -->
+    <section class="unicefTeam">
+        <div class="title-box">
+            <h3 class="title-teamRing">
+                유니세프 팀 반지로 이어진
+                <strong>우리는 유니세프 팀입니다</strong>
+            </h3>
+        </div>
+        <div class="unicefTeam-img">
+        </div>
+    </section>
+
+    <!-- 메인 7 : 유니세프 팀 사인 -->
+    <section class="unicefTeamSign">
+        <div class="title-box">
+            <div class="box-unicefTeamSign">
+                <span>나,</span>
+                <span class="slide-sign">
+                </span>
+                <span>은/는</span>
+            </div>
+            <h3>전 세계 어린이와 함께하는 유니세프 팀입니다.</h3>
+            <p>커서를 움직여 자세한 이야기를 확인해 보세요.</p>
+        </div>
+        <div class="unicefTeamImages">
+            <ul>
+                <li>
+                    <div>
+                        <img src="/img/artist_story02_blank.png" alt="유니세프팀이미지02" usemap="#artist_story02_map">
+                        <map name="artist_story02_map">
+                            <area shape="poly"
+                                coords="273,97,262,94,251,100,237,120,230,147,235,163,237,179,263,225,243,238,230,238,208,237,190,250,188,269,205,283,209,306,204,324,213,353,237,431,226,495,222,559,219,632,218,691,457,691,373,392,353,398,343,397,326,412,311,425,293,421,284,412,280,402,288,389,300,372,305,364,412,309,409,281,400,240,380,218,366,215,357,219,345,221,323,213,314,216,310,195,316,181,320,165,321,148,313,115,294,96,283,93"
+                                title="한지민" href="#" data-tooltip-id="gallery1">
+                            <area shape="poly"
+                                coords="112,135,97,141,85,154,77,177,79,235,70,235,52,243,47,250,36,264,39,281,44,293,51,295,53,357,13,460,34,466,57,463,49,504,50,546,77,691,217,691,224,498,235,434,202,324,207,306,203,283,186,270,189,248,176,193,161,154,146,139,128,131"
+                                title="박보영" href="#" data-tooltip-id="gallery2">
+                            <area shape="poly"
+                                coords="425,30,436,43,444,59,446,94,443,131,446,154,459,175,463,193,465,265,467,300,476,324,479,361,487,387,481,396,486,423,486,500,490,533,509,543,509,691,458,691,374,390,353,397,342,395,311,423,294,420,284,413,281,402,291,386,306,365,413,309,410,280,401,240,381,217,366,214,355,218,346,220,323,211,315,213,312,199,331,172,354,148,363,145,360,133,352,129,343,107,346,82,352,65,350,53,364,34,383,23,400,22,413,24"
+                                title="한효주" href="#" data-tooltip-id="gallery3">
+                            <area shape="poly"
+                                coords="250,100,235,74,219,60,195,56,178,59,164,64,149,82,145,101,145,137,163,153,177,193,190,248,207,236,243,236,261,224,235,179,234,164,229,148,235,121"
+                                title="추자현" href="#" data-tooltip-id="gallery4">
+                        </map>
+                    </div>
+                    <div>
+                        <img src="/img/artist_story05_blank_1440.png" alt="유니세프팀이미지05" usemap="#artist_story05_map">
+                        <map name="artist_story05_map">
+                            <area shape="poly"
+                                coords="443,134,432,140,422,155,420,166,431,191,440,195,444,207,437,208,429,222,412,227,425,236,437,260,461,432,460,448,456,448,452,478,456,519,509,519,509,218,478,210,477,184,482,179,479,166,480,147,461,135"
+                                title="주종혁" href="#" data-tooltip-id="gallery5">
+                            <area shape="poly"
+                                coords="126,107,105,124,101,146,110,163,105,166,136,198,143,204,135,219,107,238,101,237,87,249,69,390,95,428,109,436,102,488,107,519,265,519,255,451,257,418,278,404,293,381,307,343,266,225,254,219,214,209,198,193,189,190,182,165,185,143,178,134,167,112,148,104"
+                                title="정우" href="#" data-tooltip-id="gallery6">
+                            <area shape="poly"
+                                coords="345,109,315,124,309,145,316,183,329,198,329,206,308,223,280,236,274,244,308,342,294,382,279,404,262,415,259,457,269,476,287,504,307,519,454,519,451,481,455,447,459,447,460,432,436,260,425,237,411,228,379,214,371,206,370,195,381,182,383,164,386,141,380,132,370,117"
+                                title="조복래" href="#" data-tooltip-id="gallery7">
+                            <area shape="poly"
+                                coords="37,173,17,185,12,195,13,210,19,216,8,216,0,229,0,519,98,519,96,472,91,439,92,425,68,390,85,257,68,243,69,229,74,222,74,206,59,178"
+                                title="정윤재" href="#" data-tooltip-id="gallery8">
+                        </map>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="/img/artist_story01_blank.png" alt="유니세프팀이미지01" usemap="#artist_story01_map">
+                        <map name="artist_story01_map">
+                            <area shape="poly"
+                                coords="284,183,273,186,260,205,262,224,266,231,280,245,285,255,261,272,262,293,265,309,262,348,273,368,261,376,257,388,268,424,298,493,313,525,323,529,330,548,337,565,337,584,341,597,353,608,367,607,375,598,425,594,426,615,426,635,437,644,452,648,469,647,476,640,467,611,468,584,468,571,475,565,474,504,472,457,467,433,475,417,490,428,484,401,479,387,485,352,492,316,483,296,460,278,432,262,409,244,399,230,353,234,337,230,332,224,330,205,324,203,317,187,305,180,293,178"
+                                title="이병헌" href="#" data-tooltip-id="gallery9">
+                            <area shape="poly"
+                                coords="134,153,113,158,102,166,95,183,97,202,100,228,89,230,45,264,40,279,51,369,36,390,41,419,29,478,24,519,22,570,25,577,22,585,23,600,14,620,5,650,6,663,15,675,29,676,40,672,52,657,55,627,59,605,52,588,67,579,190,526,181,553,184,568,202,577,224,590,241,597,261,598,271,594,271,583,240,558,222,534,234,528,232,489,242,420,240,367,231,358,224,355,229,345,226,321,208,285,192,239,159,227,165,214,165,202,172,190,174,179,161,161,147,155"
+                                title="이진욱" href="#" data-tooltip-id="gallery10">
+                        </map>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="/img/artist_story03_blank_1440.png" alt="유니세프팀이미지03" usemap="#artist_story03_map">
+                        <map name="artist_story03_map">
+                            <area shape="poly"
+                                coords="233,106,211,124,201,155,210,182,208,200,168,225,166,244,178,276,175,317,192,379,186,419,202,536,311,536,321,410,311,370,317,342,325,241,320,228,273,202,278,197,273,189,280,174,284,143,276,117,256,109"
+                                title="고수" href="#" data-tooltip-id="gallery11">
+                            <area shape="poly"
+                                coords="373,83,349,92,334,110,335,148,348,181,322,191,308,204,304,219,321,228,325,242,318,343,312,369,322,412,312,536,456,536,459,460,470,480,489,480,474,414,489,369,476,223,459,207,415,187,400,170,408,148,411,120,403,91,388,91"
+                                title="이희준" href="#" data-tooltip-id="gallery12">
+                            <area shape="poly"
+                                coords="139,86,105,89,91,106,90,153,93,178,74,183,67,195,0,227,-1,430,9,440,18,442,14,485,33,479,34,536,163,536,181,443,191,381,175,318,178,276,166,244,167,224,158,201,142,195,158,165,172,117,160,98"
+                                title="박해수" href="#" data-tooltip-id="gallery13">
+                        </map>
+                    </div>
+                    <div>
+                        <img src="/img/artist_story04_blank.png" alt="유니세프팀이미지03" usemap="#artist_story04_map">
+                        <map name="artist_story04_map">
+                            <area shape="poly"
+                                coords="188,682,162,577,141,486,138,447,146,430,160,422,212,405,211,388,207,362,204,346,194,337,190,327,201,321,197,304,198,288,205,268,226,252,254,246,275,253,278,296,267,297,267,313,282,323,289,346,300,379,278,402,233,444,230,452,236,477,245,488,251,498,268,543,264,569,272,602,271,631,271,682"
+                                title="박지후" href="#" data-tooltip-id="gallery14">
+                            <area shape="poly"
+                                coords="22,682,34,646,32,633,47,618,29,584,15,560,19,491,27,457,44,427,63,399,80,365,90,326,98,301,115,276,137,269,164,272,185,288,194,307,198,321,188,327,193,338,203,347,206,364,210,387,211,404,157,422,145,431,137,447,139,479,157,559,187,682"
+                                title="정채연" href="#" data-tooltip-id="gallery15">
+                            <area shape="poly"
+                                coords="327,216,309,219,283,238,276,252,279,297,268,298,268,313,283,323,302,381,235,443,231,452,238,478,246,486,252,499,269,542,265,570,274,605,272,629,272,682,459,681,455,597,464,535,463,482,422,405,416,376,416,362,392,294,380,267,359,254,341,255,335,245,335,231"
+                                title="홍화연" href="#" data-tooltip-id="gallery16">
+                            <area shape="poly"
+                                coords="374,137,350,143,335,155,322,170,318,191,324,210,337,230,335,244,342,254,360,253,382,266,395,298,418,363,417,376,424,405,464,482,464,537,456,596,460,682,508,682,509,217,493,213,479,236,469,232,460,218,447,185,437,163,425,162,414,151,394,141"
+                                title="박유림" href="#" data-tooltip-id="gallery17">
+                        </map>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 메인 8 : 유니세프 카드 -->
+    <section class="unicefCard slider-unicefCard">
+        <div class="content-unicefCard card-01">
+            <div class="title-box">
+                <p> 유니세프 팀에 합류한 당신이 지킬 수 있는</p>
+                <p><span>기후위기에 노출된</span> 어린이</p>
+            </div>
+            <div class="box-unicefCard">
+                <div class="cardImg">
+                    <p class="caption">© UNICEF/UN0607653/Rich</p>
+                </div>
+                <div class="text-unicefCard">
+                    <p class="title">심각한 가뭄 피해 지역에<br>살고 있는 어린이</p>
+                    <p class="desc">
+                        기후변화로 전 세계 어린이 10억 명이 위험에 처해<br>
+                        있으며, 전 세계 아동은 1억 6천만 명은 심각한 가뭄<br>
+                        피해 지역에 살고 있습니다.<br>
+                        지금 어린이들에게는 깨끗한 식수/위생 환경과<br>
+                        기후변화를 최소화할 수 있는 제도가 필요합니다.
+                    </p>
+                    <p class="numberImg"></p>
+                </div>
+            </div>
+        </div>
+        <div class="content-unicefCard card-02">
+            <div class="title-box">
+                <p> 유니세프 팀에 합류한 당신이 지킬 수 있는</p>
+                <p><span>생존에 위협을 받는</span> 어린이</p>
+            </div>
+            <div class="box-unicefCard">
+                <div class="cardImg">
+                    <p class="caption">© UNICEF/UN0607653/Rich</p>
+                </div>
+                <div class="text-unicefCard">
+                    <p class="title">영양실조,<br>기초의료서비스 부족으로<br>생존에 위협을 받는 어린이</p>
+                    <p class="desc">
+                        최빈국 15개국에서는 어린이 최소 800만 명 이상이<br>
+                        중증 영양실조를 겪고 있으며, 전 세계 어린이 1,800만 명<br>
+                        이상이 필수 예방접종을 단 한 번도 맞지 못했습니다.<br>
+                        지금 어린이들에게는 생존을 위한 필수 예방접종과<br>
+                        기초 의료 서비스가 절실합니다.
+                    </p>
+                    <p class="numberImg"></p>
+                </div>
+            </div>
+        </div>
+        <div class="content-unicefCard card-03">
+            <div class="title-box">
+                <p> 유니세프 팀에 합류한 당신이 지킬 수 있는</p>
+                <p><span>학교에 다니지 못하는</span> 어린이</p>
+            </div>
+            <div class="box-unicefCard">
+                <div class="cardImg">
+                    <p class="caption">© UNICEF/UN0607653/Rich</p>
+                </div>
+                <div class="text-unicefCard">
+                    <p class="title">학교에 다니지 못하는<br>취학 연령 어린이</p>
+                    <p class="desc">
+                        아직도 전 세계 취학 연령 어린이 6,400만 명이<br>
+                        학교에 다니지 못하고 있습니다. 코로나 팬데믹 이후<br>
+                        저중소득 국가의 학습 빈곤율은 약 70%까지<br>
+                        높아진 상황입니다. 지금 어린이들에게는<br>
+                        적절한 교육 시스템과 학교가 필요합니다.
+                    </p>
+                    <p class="numberImg"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 9 : 유니세프 팀 -->
+    <section class="teamJoin-02 bg-teamJoin">
+        <div class="title-box">
+            <h3 class="title-teamRing">
+                당신의 합류로 완성되는 유니세프팀,
+                <strong>지금 유니세프 팀이 되어<br>어린이를 지켜주세요</strong>
+            </h3>
+        </div>
+        <div class="btn-text-ring">
+            <div class="text-content">
+                <span>유니세프 팀 합류하고<br>반지 받기</span>
+                <a class="btn-next"></a>
+            </div>
+        </div>
+        <p class="caption">© UNICEF/UN0607653/Rich</p>
+    </section>
+
+    <!-- 메인 10 : 유니세프 게시판 -->
+    <section class="board">
+        <ul class="title-board">
+            <li class="active">참여 · 후원</li>
+            <li>반지</li>
+            <li>배송</li>
+        </ul>
+        <ul class="contents-board" id="accordion1">
+            <li class="content-board">
+                <h3>유니세프 팀 반지는 어떻게 받을 수 있나요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>유니세프 팀 반지는 ‘유니세프 팀 캠페인’에 정기후원으로 참여해주시는 분들께 보내 드리며, 본 캠페인 후원 외 다른 방법으로는 공식 유니세프 반지를 받으실 수 없습니다. 최소
+                        정기후원 금액은 2만원으로 해당 금액보다 낮은 금액으로 후원을 신청하실 경우 반지가 발송되지 않습니다. 더 많은 어린이를 지원하기 위함이니 너그러운 양해 부탁드립니다.
+                        또한, 신규후원자의 경우 일시후원만 신청하면 유니세프 팀 반지가 전달되지 않으므로 꼭 정기후원 신청을 부탁드립니다. 기존 정기후원자의 경우, 유니세프 팀 패키지(일시후원)
+                        선물하기에 참여하시면 유니세프 팀 반지가 전달됩니다. 일시후원은 1회 참여(3만 원)당 반지 1개를 보내 드리며, 최대 3회(후원금 9만 원, 반지 3개)까지 참여하실 수
+                        있습니다.</p>
+                </div>
+            </li>
+            <li class="content-board">
+                <h3>유니세프 팀 반지를 여러 개 받을 수 있나요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p><strong>신규 후원자가</strong> 2만 원 이상 정기후원을 신청하고 첫 후원금을 납입하면 팀 반지 1개를 보내 드립니다. <strong>2개 이상의 팀 반지를 받길
+                            원하실 경우</strong>, 정기후원 신청 후 유니세프 팀
+                        패키지를 통해 일시후원에 참여하시면, 1회 참여(3만 원)당 후원반지 1개를 추가로 보내드리며, 최대 3회까지 일시후원에 참여 가능해 후원반지 또한 최대 3개까지 추가로
+                        받아보실 수 있습니다.<br><br>
+                        <strong>기존 정기후원자의 경우</strong>, 유니세프 팀 패키지를 통해 일시후원에 참여하시면, 1회 참여(3만 원)당 후원반지 1개를 추가로 보내드리며, 최대
+                        3회까지 일시후원에 참여 가능해
+                        후원반지 또한 최대 3개까지 추가로 받아보실 수 있습니다. 더 많은 분들이 어린이를 위해 유니세프 팀에 합류하길 바라는 뜻에서 반지 수량을 제한하는 것이니 너그러운 양해를
+                        부탁드립니다.</p>
+                </div>
+            </li>
+            <li class="content-board">
+                <h3>후원금은 어떻게 쓰이나요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>후원금은 유니세프 본부로 송금된 후 전쟁, 자연재해 등 우선순위와 긴급 순위에 따라 전 세계 유니세프 국가사무소로 배분되고 있습니다 유니세프한국위원회는 유니세프 본부와 함께
+                        소중한 후원금으로 식수와 위생 서비스, 교육, 심리사회 치료, 영양실조 치료, 현금 등을 지원해 모든 어린이가 행복한 세상을 만들고 있습니다.</p>
+                </div>
+            </li>
+            <li class="content-board">
+                <h3>유니세프는 믿을 수 있는 곳인가요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>유니세프는 전 세계 어린이를 돕기 위해 설립된 공식 유엔기구입니다. 유니세프한국위원회는 30여 개국에 설립된 유니세프국가위원회 중 한 곳으로 매년 총 수입의 90% 이상을
+                        국내외 어린이를 위한 고유목적 사업에 사용합니다. 한국에서 유니세프를 대표해 어린이를 위한 기금을 모으고 한국을 포함한 전 세계 어린이 권리를 옹호하는 활동을 펼치고
+                        있습니다. 또한, 내부 감사, 유니세프 본부 및 외부회계법인 감사를 통해 후원금 사용의 투명성을 항상 검증받고 있습니다.</p>
+                </div>
+            </li>
+            <li class="content-board">
+                <h3>이벤트 참여는 어떻게 하나요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>이벤트 참여를 원하실 경우 유니세프 팀 반지 수령 후 인스타그램, 유튜브, 블로그 등 SNS에 #유니세프 #유니세프팀 #유니세프팀반지 해시태그와 함께 유니세프 팀 반지
+                        사진을 올려주세요. 추첨을 통해 유니세프 기념품을 선물로 드리며, 당첨되신 분들에게는 개별 연락드릴 예정입니다.
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="contents-board" id="accordion2">
+            <li class="content-board">
+                <h3>유니세프 팀 반지의 재질은 무엇인가요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>유니세프 팀 반지는 <strong>은 도금 써지컬 스틸 소재로 제작</strong>되어 알레르기 반응을 일으킬 위험이 거의 없고 인체에 무해하나, 개인 차가 있을 수
+                        있습니다. 다만 장기간 착용 시 물과
+                        땀, 습기 등에 의해 변색되거나 스크래치가 발생할 수 있습니다. </p>
+                </div>
+            </li>
+            <li class="content-board">
+                <h3>유니세프 팀 반지의 사이즈는 어떻게 되나요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>유니세프 팀 반지는 총 3개의 사이즈로 제작되었으며, 상세 치수는 아래와 같습니다.
+                        반지 둘레 사이즈는 2019년 10월 1일부터 적용된 한국표준 규격(KS규격) 입니다.
+                        <strong>후원 신청이 완료된 후에는 사이즈 변경이 불가능하니 신청 전에 다시 한번 원하는 사이즈를 확인해 주시기를 부탁드립니다.</strong>
+                        선택하신 유니세프 팀 반지 사이즈는 홈페이지 – 마이페이지 – 발송현황에서 확인하실 수 있습니다.
+                    </p>
+                </div>
+            </li>
+            <li class="content-board">
+                <h3>유니세프 팀 반지를 수령한 후 사이즈를 교환할 수 있나요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>후원 신청 완료 후 단순 변심, 사이즈 착오 등으로 인한 교환 및 반품은 불가합니다. 유니세프 팀 반지는 손에 착용하시는 것 이외에도 고리에 연결하여 키링으로 활용하시거나,
+                        체인에 걸어 목걸이로도 활용하실 수 있습니다. 선호에 따라 다양하게 활용해 주시면 감사하겠습니다. 불량의 경우, 사진을 찍어 이메일(<a
+                            href="">answer@unicef.or.kr</a>)로
+                        성함, 연락처와 함께 보내 주시면 검토 후에 동일한 사이즈로 재발송 도와 드리겠습니다. 불량의 경우에도 사이즈 변경은 불가능한 점 양해 부탁드리겠습니다.</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="contents-board" id="accordion3">
+            <li class="content-board">
+                <h3>유니세프 팀 반지는 언제 배송되나요?</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>유니세프 팀 반지는 첫 후원금 납입 이후 순차적으로 일반우편을 통해 발송됩니다. 발송 예정일은 주소 입력 후 보내 드리는 안내 문자와 홈페이지 – 마이페이지 – 발송현황에서
+                        확인하실 수 있습니다. 발송일 이후 2주(주말 제외, 영업일 기준)까지는 너그러운 마음으로 기다려 주시면 감사하겠습니다. 일반우편 특성상 배송 추적이 어려우니 발송 예정일
+                        후 1~2주(주말 제외, 영업일 기준) 동안은 우편함을 꼭 확인해주시기 바랍니다. 발송 예정일 2주 후에도 반지를 수령하지 못하셨을 경우
+                        <a href="#">answer@unicef.or.kr</a>로 후원자님의 성함, 연락처를 기재하시어 메일 주시면 안내 드리겠습니다.</p>
+                </div>
+            </li>
+            <li class="content-board">
+                <h3>유니세프 팀 반지를 받지 못했습니다.</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>일반우편으로 발송되기 때문에 간혹 배송이 늦어질 수 있습니다. 발송일 이후 2주(주말 제외, 영업일 기준)까지는 너그러운 마음으로 기다려 주시면 감사하겠습니다. 그 이후에도
+                        수령하지 못하실 경우 홈페이지 1:1 문의, 이메일(<a href="#">answer@unicef.or.kr</a>), 콜센터(02-737-1004) 중 편하신 방법으로
+                        후원자님의 성함과 연락처를
+                        기재하시어 연락 주시면 안내 드리겠습니다. 또한, 첫 후원금이 납입되지 않았을 경우에도 팀 반지가 발송되지 않습니다. 선택하신 납입일에 후원금이 납입될 수 있도록 확인
+                        부탁드립니다.</p>
+                </div>
+            </li>
+            <li class="content-board">
+                <h3>유니세프 팀 반지를 받을 주소를 변경하고 싶어요.</h3>
+                <div>
+                    <p class="content-title">A.</p>
+                    <p>주소 변경은 후원 신청 시 받으신 문자를 통해 수정 가능하며, 유니세프 홈페이지 로그인 후 마이페이지 - 발송현황에서도 수정하실 수 있습니다. 다만, 주소 수정은 발송 예정일
+                        7일 이전에만 가능하며, 그 이후에 수정을 원하시는 경우에는 홈페이지 1:1 문의, 이메일(<a href="#">answer@unicef.or.kr</a>),
+                        콜센터(02-737-1004) 중 편한
+                        방법으로 문의 부탁드립니다.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div>
+            <a href="https://www.unicef.or.kr/?trackcode=23team_page1"></a>
+            <span class="blind">유니세프 for every chilld</span>
+        </div>
+        <address>
+            <span>단체명 : 사단법인 유니세프한국위원회 (고유번호:102-82-07606) | 연락처 : 02-737-1004</span>
+            <span>주소 : [04099] 서울시 마포구 서강로 60(창전동) | 대표자 : 정갑영</span>
+            <p class="copyright">COPYRIGHT @ THE KOREAN COMMITTEE FOR UNICEF. ALL RIGHT RESERVED.</p>
+        </address>
+    </footer>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./unicef.js"></script>
+</body>
+
+</html>
