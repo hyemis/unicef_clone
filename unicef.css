@@ -1014,7 +1014,7 @@ section.unicefTeam {
 section.unicefTeam .unicefTeam-img {
     width: 100%;
     aspect-ratio: 1840 / 629;
-    background: url(/img/iam_peoples@2x.jpg) no-repeat center center;
+    background: url(img/iam_peoples@2x.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -1228,15 +1228,15 @@ section.unicefCard {
 }
 
 .card-01 .cardImg {
-    background-image: url('/img/problem_slide03@1.5x.jpg');
+    background-image: url('img/problem_slide03@1.5x.jpg');
 }
 
 .card-02 .cardImg {
-    background-image: url('/img/problem_slide01@1.5x.jpg');
+    background-image: url('img/problem_slide01@1.5x.jpg');
 }
 
 .card-03 .cardImg {
-    background-image: url('/img/problem_slide03@1.5x.jpg');
+    background-image: url('img/problem_slide03@1.5x.jpg');
 }
 
 .box-unicefCard .text-unicefCard {
