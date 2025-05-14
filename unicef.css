@@ -500,7 +500,7 @@ section.video .video-wrapper iframe {
 section.video .video-wrapper button {
     width: 40px;
     height: 40px;
-    background-image: url('./img/sound_sprites@2x.png');
+    background-image: url('img/sound_sprites@2x.png');
     background-size: 130px;
     background-position: 120px;
     padding: 0;
@@ -518,7 +518,7 @@ section.teamRing {
 }
 
 .bg-teamRing {
-    background: #fff url("./img/ring_bg_line@1.5x.png") center;
+    background: #fff url("img/ring_bg_line@1.5x.png") center;
     background-repeat: repeat;
     background-size: 1920px auto;
     width: 100%;
@@ -530,7 +530,7 @@ section.teamRing .content-ring {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: url("./img/team_bg@2x.png") no-repeat center;
+    background: url("img/team_bg@2x.png") no-repeat center;
     background-size: 100% auto;
     background-position: top 20% left 10%;
     position: relative;
@@ -593,22 +593,22 @@ section.teamRing .info-ring .image-list li {
 }
 
 section.teamRing .info-ring .image-list li:nth-child(1) {
-    background: url(./img/ring_info01@2x.jpg) no-repeat center;
+    background: url(img/ring_info01@2x.jpg) no-repeat center;
     background-size: cover;
 }
 
 section.teamRing .info-ring .image-list li:nth-child(2) {
-    background: url(./img/ring_info02@2x.jpg) no-repeat center;
+    background: url(img/ring_info02@2x.jpg) no-repeat center;
     background-size: cover;
 }
 
 section.teamRing .info-ring .image-list li:nth-child(3) {
-    background: url(./img/ring_info03@2x.jpg) no-repeat center;
+    background: url(img/ring_info03@2x.jpg) no-repeat center;
     background-size: cover;
 }
 
 section.teamRing .info-ring .image-list li:nth-child(4) {
-    background: url(./img/ring_info04@2x.jpg) no-repeat center;
+    background: url(img/ring_info04@2x.jpg) no-repeat center;
     background-size: cover;
 }
 
