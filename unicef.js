@@ -16,28 +16,51 @@ $(window).on('resize', function () {
 });
 
 // 스크롤 시 로고 변경
+// default = 로고 white, 스티키 버튼 blue
 $(window).scroll(function () {
-    let logo = $(".logo p");
     let scrollTop = $(window).scrollTop();
+    let windowHeight = $(window).height();
+    let windowBottom = scrollTop + windowHeight;
+
+    let logo = $(".logo p");
+    let ringBnt = $(".btn-text-ring");
+    let stickyBtn = $(".btn-sticky");
+
+    let section1Bottom = $("section.video").offset().top + $("section.video").outerHeight();
     let section2Scroll = $("section.teamRing").offset().top;
+    let section4Bottom = $("section.lingModelImage").offset().top + $("section.lingModelImage").outerHeight();
     let section6Scroll = $("section.unicefTeam").offset().top;
+    let section8Bottom = $("section.unicefCard").offset().top + $("section.unicefCard").outerHeight();
     let section10Scroll = $("section.board").offset().top;
 
-    if (scrollTop > section2Scroll && scrollTop < section6Scroll || scrollTop > section10Scroll) {
-        logo.css({
-            "background-position": "100% 0%"
-        });
-    } else {
+    // logo
+    if (scrollTop >= 0 && scrollTop < section2Scroll || scrollTop >= section6Scroll && scrollTop < section10Scroll) {
         logo.css({
             "background-position": "0 0"
         });
+    } else {
+        logo.css({
+            "background-position": "100% 0%"
+        });
+    }
+
+    // sticky btn
+    if (windowBottom >= section1Bottom && windowBottom <= section4Bottom || windowBottom >= section8Bottom) {
+        stickyBtn.css({
+            "background-color": "#000"
+        });
+        ringBnt.addClass("scrolled");
+    } else {
+        stickyBtn.css({
+            "background-color": "#1CABE2"
+        });
+        ringBnt.removeClass("scrolled");
     }
 });
 
 // 캐로셀 
 let carouselPrev = $(".carousel-box img.img_people_prev");
 let carousel = $(".carousel-box img.img_people_next");
-let thumbNext = $(".carousel-thumb-right img");
 let thumbPrevs = $(".carousel-thumb-left li img");
 let thumbPrev = $(".carousel-thumb-left li:last-child img");
 let carouselBar = $("section.main .bar-thumb-group .bar");
@@ -61,11 +84,11 @@ const carouselList = [
     "img/people02.jpg",
     "img/people03.jpg",
     "img/people04.jpg",
-    "img/people05.jpg"
+    "img/people05.jpg",
 ];
 
-// 썸네일
 const thumbs = [
+    "img/people_thumb05.jpg",
     "img/people_thumb06.jpg",
     "img/people_thumb07.jpg",
     "img/people_thumb08.jpg",
@@ -82,7 +105,6 @@ const thumbs = [
     "img/people_thumb02.jpg",
     "img/people_thumb03.jpg",
     "img/people_thumb04.jpg",
-    "img/people_thumb05.jpg"
 ];
 
 let currentIndex = 0;
@@ -105,11 +127,11 @@ function createBar() {
 
 // jquery 의 경우 transform 을 애니메이션으로 직접 지원하지 않음
 // 캐로셀 + 썸네일
-// 다음 이미지의 경우 hide 후 fade 로 이동하는 느낌 구현
 function updateCarousel(index) {
     carouselPrev.attr("src", carouselList[index - 1]).show();
 
     carousel.fadeOut(800, function () {
+        updateThumbnailCarousel(index);
         carousel.attr("src", carouselList[index]).fadeIn(800);
 
         document.getElementById("img_people_next").animate([{
@@ -120,10 +142,7 @@ function updateCarousel(index) {
             }
         ], 800)
 
-        let nextIndex = (index + 1) % carouselList.length;
-        thumbNext.attr("src", thumbs[nextIndex]).hide().fadeIn(800);
 
-        updateThumbnailCarousel(index);
     });
 
     carouselBarList.removeClass("active");
@@ -131,19 +150,30 @@ function updateCarousel(index) {
 }
 
 function updateThumbnailCarousel(currentIndex) {
-    let thumbList = $('.carousel-thumb-left ul');
-    let prevIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
-    let newThumb = $('<li><img src="' + thumbs[prevIndex] + '" alt="이전 썸네일"></li>');
+    let thumbItems = $(".carousel-thumb-left li img");
+    let visibleCount = thumbItems.length;
+    let thumbnailsToShow = [];
 
-    thumbList.find('li').first().fadeOut(800, function () {
-        $(this).remove();
-    })
+    for (let i = visibleCount - 1; i >= 0; i--) {
+        let thumbIdx = (currentIndex + i) % thumbs.length;
+        thumbnailsToShow.push(thumbs[thumbIdx]);
+    }
 
-    newThumb.hide().appendTo(thumbList).fadeIn(800);
+    thumbItems.each(function (i) {
+        let img = $(this);
+
+        img.removeClass("thumb-show").addClass("thumb-animate");
+
+        // 애니메이션 클래스 추가 
+        setTimeout(() => {
+            img.attr("src", thumbnailsToShow[i]);
+            img.removeClass("thumb-animate").addClass("thumb-show");
+        }, 600);
+
+    });
+
 
 }
-
-updateCarousel(currentIndex);
 
 // // 자동 캐로셀 플레이
 setInterval(function () {
@@ -358,22 +388,6 @@ function handleReviewClick(event) {
             }, 10);
         }
     });
-
-
-    // // 기존 active 제거 > 선택된 이미지에 active 추가 > 매치된 댓글로 이동
-    // $(".dialog-review-slider .slick-slide").removeClass("slick-active focus");
-
-    // const matchingSlide = $(".dialog-review-slider .slick-slide").filter(function () {
-    //     return $(this).find("img").attr("src") === imgSrc;
-    // });
-
-    // matchingSlide.addClass("active-slide focus");
-
-    // const matchedIndex = matchingSlide.data("slick-index");
-    // if (matchedIndex !== undefined) {
-    //     $(".dialog-review-slider").slick("slickGoTo", matchedIndex);
-    // }
-
 }
 
 // 1. 슬릭 슬라이더
@@ -634,7 +648,8 @@ $("#accordion1, #accordion2, #accordion3").accordion({
     icons: {
         header: "board-btn-close",
         activeHeader: "board-btn-open"
-    }
+    },
+    active: true,
 });
 
 let list = $('.contents-board');
