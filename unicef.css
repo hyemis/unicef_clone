@@ -56,7 +56,7 @@ body {
 .logo p {
     width: 102px;
     height: 59px;
-    background-image: url(../img/logo_sprites@2x.png);
+    background-image: url(img/logo_sprites@2x.png);
     background-size: 204px 59px;
     background-position: 0% 0%;
     background-color: transparent;
@@ -132,7 +132,7 @@ section {
     display: block;
     width: 120px;
     height: 50px;
-    background-image: url(../img/next_long_blue.svg);
+    background-image: url(img/next_long_blue.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -149,7 +149,7 @@ section {
 
 .btn-text-ring .text-content::after {
     content: "";
-    background-image: url(../img/team_ring@2x.png);
+    background-image: url(img/team_ring@2x.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
@@ -204,7 +204,7 @@ section {
 }
 
 .btn-text-ring .text-content::after {
-    background-image: url(../img/sticky_img@2x.png);
+    background-image: url(img/sticky_img@2x.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: left;
@@ -360,12 +360,12 @@ section.main .bar-thumb-group span {
 }
 
 section.main .bar-thumb-group .btn-prev-thumb {
-    background-image: url(../img/prev_bar.svg);
+    background-image: url(img/prev_bar.svg);
     background-repeat: no-repeat;
 }
 
 section.main .bar-thumb-group .btn-next-thumb {
-    background-image: url(../img/prev_bar.svg);
+    background-image: url(img/prev_bar.svg);
     background-repeat: no-repeat;
     text-align: end;
     transform: rotateY(180deg);
@@ -996,11 +996,11 @@ section.review .review-box {
 }
 
 .dialog-review-slider button:nth-of-type(1) {
-    background-image: url(../img/prev_small.svg);
+    background-image: url(img/prev_small.svg);
 }
 
 .dialog-review-slider button:nth-of-type(2) {
-    background-image: url(../img/prev_small.svg);
+    background-image: url(img/prev_small.svg);
     transform: rotateY(180deg);
 }
 
@@ -1076,7 +1076,7 @@ section.unicefTeamSign .unicefTeamImages li div:first-child {
 }
 
 .unicefTeamImages ul li:nth-child(1)>div:first-of-type {
-    background-image: url(../img/artist_story02@2x.jpg);
+    background-image: url(img/artist_story02@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1084,7 +1084,7 @@ section.unicefTeamSign .unicefTeamImages li div:first-child {
 }
 
 .unicefTeamImages ul li:nth-child(1)>div:last-of-type {
-    background-image: url(../img/artist_story05@2x.jpg);
+    background-image: url(img/artist_story05@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1092,7 +1092,7 @@ section.unicefTeamSign .unicefTeamImages li div:first-child {
 }
 
 .unicefTeamImages ul li:nth-child(2)>div:first-of-type {
-    background-image: url(../img/artist_story01@2x.jpg);
+    background-image: url(img/artist_story01@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1100,7 +1100,7 @@ section.unicefTeamSign .unicefTeamImages li div:first-child {
 }
 
 .unicefTeamImages ul li:nth-child(3)>div:first-of-type {
-    background-image: url(../img/artist_story03@2x.jpg);
+    background-image: url(img/artist_story03@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1108,7 +1108,7 @@ section.unicefTeamSign .unicefTeamImages li div:first-child {
 }
 
 .unicefTeamImages ul li:nth-child(3)>div:last-of-type {
-    background-image: url(../img/artist_story04@2x.jpg);
+    background-image: url(img/artist_story04@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1280,15 +1280,15 @@ section.unicefCard {
 }
 
 .card-01 .numberImg {
-    background-image: url(../img/problem_slide03_total@2x.png);
+    background-image: url(img/problem_slide03_total@2x.png);
 }
 
 .card-02 .numberImg {
-    background-image: url(../img/problem_slide01_total@2x.png);
+    background-image: url(img/problem_slide01_total@2x.png);
 }
 
 .card-03 .numberImg {
-    background-image: url(../img/problem_slide02_total@2x.png);
+    background-image: url(img/problem_slide02_total@2x.png);
 }
 
 .unicefCard .slick-list {
@@ -1328,7 +1328,7 @@ section.teamJoin-02 {
 }
 
 section.bg-teamJoin {
-    background-image: url(../img/sec_cta_bg@1.5x.jpg);
+    background-image: url(img/sec_cta_bg@1.5x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1349,7 +1349,7 @@ section.teamJoin-02 .title-box {
 }
 
 section.teamJoin-02 .btn-text-ring .text-content::after {
-    background-image: url(../img/cta_ring@2x.png);
+    background-image: url(img/cta_ring@2x.png);
     top: -40px;
 }
 
@@ -1417,15 +1417,15 @@ section.board .title-board li.active {
 }
 
 .ui-accordion-header .ui-icon.board-btn-close {
-    background-image: url(../img/board_btn.svg) !important;
+    background-image: url(img/board_btn.svg) !important;
 }
 
 .board-btn-close {
-    background-image: url(../img/board_btn.svg);
+    background-image: url(img/board_btn.svg);
 }
 
 .board-btn-open {
-    background-image: url(../img/board_btn.svg) !important;
+    background-image: url(img/board_btn.svg) !important;
     transform: rotate(90deg);
 }
 
@@ -1482,7 +1482,7 @@ footer {
 }
 
 footer a {
-    background-image: url(../img/footer_logo@2x.png);
+    background-image: url(img/footer_logo@2x.png);
     background-size: contain;
     display: inline-block;
     width: 289px;
